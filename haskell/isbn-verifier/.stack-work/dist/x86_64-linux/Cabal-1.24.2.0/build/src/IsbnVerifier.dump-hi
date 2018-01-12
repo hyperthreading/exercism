@@ -1,0 +1,84 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-20 06:28:59.852166 UTC
+
+interface isbn-verifier-2.0.0.2-T1Tt6b0RZCCeIUYZvnX4b:IsbnVerifier 8002
+  interface hash: 6da96155d62ccb8297a5aa171af5be3e
+  ABI hash: a1ebaaf07db48f8236cfefa5f9a809c2
+  export-list hash: 74b24f42f1da49d57323f359206a0472
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ab396f11155bd696ab63895436e6f1df
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  IsbnVerifier.isbn
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:Text.Read 75c59863e882ebaec4532e9465e2ee9b
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+829dad1aab915df1aa2dd3ec2ed0d754
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   IsbnVerifier.$trModule2
+                   IsbnVerifier.$trModule1) -}
+f912debf4ad1285ed4a00e0e74206cc9
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "IsbnVerifier"#) -}
+aa16e6d15785587dfbfb5e05af02912c
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "isbn-verifier-2.0.0.2-T1Tt6b0RZCCeIUYZvnX4b"#) -}
+1923c240fc82ab1cab9ab0d5f3167a8d
+  isbn :: GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (isbn_str :: GHC.Base.String) ->
+                 IsbnVerifier.verify_isbn
+                   isbn_str
+                   IsbnVerifier.isbn_dashes
+                   IsbnVerifier.isbn_length
+                   GHC.Types.True
+                   IsbnVerifier.isbn1) -}
+405c02e76efdfd07fb7d3569c1b275dd
+  isbn1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+0b1cb9cc6be3f73d1dfafba4d8b8ae07
+  isbn_dashes :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 3#) -}
+f9e537784dc087906450223d73b4c6e2
+  isbn_length :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 10#) -}
+f9c030c0317f455a69fbc7e620b72c43
+  verify_isbn ::
+    GHC.Base.String
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 5,
+     Strictness: <S,1*U><L,1*U(U)><L,1*U(U)><L,1*U><L,1*U(U)> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
