@@ -1,0 +1,20 @@
+(format "Call me %s" "ass")
+/bin/sh    
+(exit)
+(defn hello
+  ([]
+   (hello ["World"]))
+  ([name] ;; <- arglist goes here
+   (format "Hello, %s!" name))
+)
+(hello "World")
+(test)
+exit
+(defn hello
+  ([]
+   (hello ["World"]))
+  ([name] ;; <- arglist goes here
+   (format "Hello, %s!" name))
+)
+(hello)
+(exit)
