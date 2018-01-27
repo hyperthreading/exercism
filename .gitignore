@@ -2,3 +2,7 @@
 /clojure/armstrong-numbers/.lein-repl-history
 /clojure/bob/.nrepl-port
 /clojure/bob/.lein-failures
+.nrepl-port
+repl-port
+.lein-failures
+.lein-repl-history
